@@ -10,7 +10,7 @@ fautes = 0
 guessed = []
 #création des deux listes représentant le mot mystère (liste mot et liste vide de même longueur)
 for i in range(0, len(word)):
-    word1.append(word[i])
+    word1.append(word[i].lower())
 
 while len(word) > len(word2):
     word2.append("_")
@@ -18,6 +18,7 @@ while len(word) > len(word2):
 #print(word1)
 #print(word2)
 os.system('cls')
+
 
 
 while word1 != word2 and fautes <=6:
