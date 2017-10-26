@@ -23,7 +23,10 @@ os.system('cls')
 while word1 != word2 and fautes <=6:
     h = 0
     letter = input("Enter a letter ")
+    
     if len(letter) == 1 :   #checking that there is only one entered letter
+       
+        letter = letter.lower()
         for u in range(0, len(guessed)):
             if guessed[u] == letter:
                 copy = 1    #checking if the letter has already been entered once
