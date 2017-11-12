@@ -19,7 +19,7 @@ while k == "y":
     content = [x.strip() for x in content]
 
     print(content)
-    t = random.randint(0, len(content)-1))
+    t = random.randint(0, len(content)-1)
     # Debug:
     print(t)
 
