@@ -1,5 +1,4 @@
 import os
-import random
 CurrDir = os.getcwd()
 os.chdir(CurrDir)
 

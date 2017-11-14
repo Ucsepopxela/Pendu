@@ -1,13 +1,16 @@
 import os
-import random
 CurrDir = os.getcwd()
 os.chdir(CurrDir)
 
+mylist=[]
 
+F=open("words.txt","r")
+for line in F:
+    line=line.lower()
+    counter=line.count(line)
+    print(line,counter)
+    mylist.append(line)
 
-with open("words.txt") as f:
-    content = f.readlines()
+mylist.sort()
 
-content = [x.strip() for x in content]
-
-TO BE DONE !!!
+print(mylist)
